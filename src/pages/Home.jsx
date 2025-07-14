@@ -142,12 +142,12 @@ const Home = () => {
             </motion.h1>
 
             <motion.h1
-              className="text-7xl md:text-8xl lg:text-9xl mt-4 gradient-text"
+              className="text-7xl md:text-8xl lg:text-9xl mt-4 gradient-text h1logo"
               initial={{ scale: 0.7, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 1, delay: 1.4 }}
             >
-              P R I M E . M
+              PRIME.M
             </motion.h1>
 
             <motion.h2
