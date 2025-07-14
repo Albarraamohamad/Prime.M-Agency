@@ -122,7 +122,7 @@ const Home = () => {
         {/* HERO TEXT */}
         <motion.section
           id="home"
-          className="w-full text-white flex justify-center items-center text-center px-4 py-32 sm:py-48 md:py-12 lg:py-10"
+          className="w-full text-white flex justify-center items-center text-center  py-32 sm:py-48 md:py-12 lg:py-10"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1 }}
@@ -133,7 +133,7 @@ const Home = () => {
             transition={{ duration: 1, delay: 1.1 }}
           >
             <motion.h1
-              className="text-3xl md:text-5xl lg:text-6xl"
+              className="text-5xl  md:text-5xl lg:text-6xl"
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8, delay: 1.2 }}
@@ -142,7 +142,7 @@ const Home = () => {
             </motion.h1>
 
             <motion.h1
-              className="text-6xl md:text-8xl lg:text-9xl mt-4 bg-gradient-to-t from-[#2b00ff] to-white bg-clip-text text-transparent"
+              className="text-7xl md:text-8xl lg:text-9xl mt-4 gradient-text"
               initial={{ scale: 0.7, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 1, delay: 1.4 }}
@@ -159,18 +159,26 @@ const Home = () => {
               AGENCY
             </motion.h2>
 
-            <motion.div
-              className="flex justify-center mt-6"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1.8 }}
-            >
-              <a href="#about">
-                <button className="px-8 py-2 text-white cursor-pointer font-semibold rounded-full bg-gradient-to-r from-[#7357ff] to-[#fcacff] hover:opacity-90 transition-all duration-300">
-                  EXPLORE
-                </button>
-              </a>
-            </motion.div>
+           <motion.div
+  className="flex justify-center mt-6"
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, delay: 1.8 }}
+>
+  <a href="#about">
+    <button
+      className="px-8 py-2 text-white font-semibold rounded-full transition-all duration-300 bg-gradient-to-r from-[#7357ff] to-[#fcacff] hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-[#fcacff]"
+      style={{
+        WebkitAppearance: 'none', // Safari compatibility
+        WebkitTapHighlightColor: 'transparent', // Optional smoother UX
+        backgroundImage: 'linear-gradient(to right, #7357ff, #fcacff)', // Fallback for older Safari
+      }}
+    >
+      EXPLORE
+    </button>
+  </a>
+</motion.div>
+
           </motion.div>
         </motion.section>
 

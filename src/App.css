@@ -7,3 +7,35 @@
 html {
   scroll-behavior: smooth;
 }
+.gradient-text {
+  background-image: linear-gradient(to top, #2b00ff, white);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+/* index.css or App.css */
+.gradient-text-about {
+  background: linear-gradient(to right, #7357ff, #fcacff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+/* App.css */
+.gradient-text-services {
+  background: linear-gradient(to right, #7357ff, #fcacff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+/* App.css */
+.gradient-text-contact {
+  background: linear-gradient(to right, #7357ff, #fcacff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+/* styles.css or tailwind.css */

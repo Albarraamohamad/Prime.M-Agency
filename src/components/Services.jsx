@@ -46,19 +46,22 @@ const Services = () => {
       viewport={{ once: true }}
     >
       <motion.div
-        className="text-center max-w-3xl mx-auto"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.2 }}
-      >
-        <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#7357ff] to-[#fcacff] mb-4">
-          Our Services
-        </h2>
-        <div className="h-[4px] w-[80px] mx-auto mb-6 bg-gradient-to-r from-[#7357ff] to-[#fcacff] rounded-full"></div>
-        <p className="text-gray-300 text-lg">
-          We provide full-funnel media buying services to help your brand grow across the most effective platforms.
-        </p>
-      </motion.div>
+  className="text-center max-w-3xl mx-auto"
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, delay: 0.2 }}
+>
+  <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text-services">
+    Our Services
+  </h2>
+
+  <div className="h-[4px] w-[80px] mx-auto mb-6 bg-gradient-to-r from-[#7357ff] to-[#fcacff] rounded-full"></div>
+
+  <p className="text-gray-300 text-lg">
+    We provide full-funnel media buying services to help your brand grow across the most effective platforms.
+  </p>
+</motion.div>
+
 
       <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
         {services.map((service, index) => (

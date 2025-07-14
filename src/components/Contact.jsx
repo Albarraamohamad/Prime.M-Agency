@@ -40,14 +40,15 @@ const Contact = () => {
       transition={{ duration: 1 }}
       viewport={{ once: true }}
     >
-      <motion.h2
-        className="text-4xl md:text-5xl font-bold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-[#7357ff] to-[#fcacff]"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.2 }}
-      >
-        Contact Us
-      </motion.h2>
+   <motion.h2
+  className="text-4xl md:text-5xl font-bold text-center mb-8 gradient-text-contact"
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, delay: 0.2 }}
+>
+  Contact Us
+</motion.h2>
+
 
       <form
         ref={form}
