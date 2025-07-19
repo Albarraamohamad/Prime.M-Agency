@@ -7,6 +7,9 @@ import logo from "../assets/prime__2_-removebg-preview.png";
 import bg from "../assets/background.jpg";
 import bg2 from "../assets/background4.jpg";
 import bg3 from "../assets/background3.jpg";
+import tiktik from '../assets/tiktok-icon-white-1-logo-svgrepo-com.svg'
+import grow from '../assets/grow-growth-hand-svgrepo-com.svg'
+import grow2 from '../assets/finance-markting-money-coin-dollar-molecule-svgrepo-com.svg'
 
 import Swiper from '../Swiper'
 import { FaWhatsapp, FaFacebook, FaInstagram } from 'react-icons/fa';
@@ -227,7 +230,7 @@ const Home = () => {
         label: 'TikTok ADS',
         icon: (
           <img
-            src="src/assets/tiktok-icon-white-1-logo-svgrepo-com.svg"
+            src={tiktik}
             alt="TikTok"
             className="w-12"
           />
@@ -253,11 +256,11 @@ const Home = () => {
         {[
           {
             text: 'Analyze and Grow Your Audience',
-            img: 'src/assets/grow-growth-hand-svgrepo-com.svg',
+            img: grow,
           },
           {
             text: 'Create multichannel marketing',
-            img: 'src/assets/finance-markting-money-coin-dollar-molecule-svgrepo-com.svg',
+            img: grow2,
           },
         ].map((item, index) => (
           <motion.div
