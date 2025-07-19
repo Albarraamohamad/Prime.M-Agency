@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { FaFacebookF, FaInstagram, FaSnapchatGhost } from 'react-icons/fa'
+import { FaFacebookF, FaInstagram, FaSnapchatGhost, FaWhatsapp } from 'react-icons/fa'
 
 const Footer = () => {
   return (
@@ -22,7 +22,7 @@ const Footer = () => {
         <div className="flex space-x-6 text-xl">
           
           <a
-            href="https://www.facebook.com/profile.php?id=61577903770204&mibextid=wwXIfr&rdid=eawAavkfdEjcgdHG&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16dESejfPj%2F%3Fmibextid%3DwwXIfr"
+            href="https://www.facebook.com/share/1D3uMDqRhU/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-[#1877F2] transition duration-300"
@@ -30,13 +30,20 @@ const Footer = () => {
             <FaFacebookF />
           </a>
           <a
-            href="https://www.instagram.com/prime.m.agency"
+            href="https://www.instagram.com/prime.m.agency/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-[#E1306C] transition duration-300"
           >
             <FaInstagram />
           </a>
+          <a
+              href="https://api.whatsapp.com/send/?phone=%2B201009089502&text&type=phone_number&app_absent=0&wame_ctl=1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaWhatsapp className=" text-green-500 hover:scale-110 transition-transform" />
+            </a>
           <a
             href="https://www.snapchat.com/"
             target="_blank"

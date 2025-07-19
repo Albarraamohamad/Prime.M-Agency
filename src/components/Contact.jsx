@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
+import '../App.css'
 
 const Contact = () => {
   const form = useRef()
@@ -34,7 +35,7 @@ const Contact = () => {
   return (
     <motion.section
       id="contact"
-      className="min-h-screen bg-[#0f0f0f] text-white px-6 py-20 md:px-20"
+      className="min-h-screen  text-white px-6 py-20 md:px-20 contact"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
