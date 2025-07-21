@@ -193,7 +193,7 @@ const Home = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, delay: 1.2 }}
     >
-      We Help E-commerce brands Scale their Revenue.
+      We Help E-commerce Brands & Businesses Scale their Revenue.
     </motion.h1>
 
     {/* Paragraphs */}
