@@ -27,7 +27,7 @@ import InfiniteSection from "../components/InfiniteSection";
 const Home = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const stats = [
-    { number: 50, suffix: 'M', label: '12 Month Revenue Generated' },
+    { number: 20, suffix: 'M', label: '12 Month Revenue Generated' },
     { number: 10, suffix: 'X', label: 'Average client ROAS' },
     { number: 39, suffix: '%', label: 'Average increase in sales' },
     { number: 32, suffix: '%', label: 'Average decrease in CPA' },
@@ -277,28 +277,34 @@ const Home = () => {
       </div>
 
       {/* Stats */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mb-10">
-        {stats.map((stat, index) => {
-          const { ref, inView } = useInView({ triggerOnce: true });
-          return (
-            <motion.div
-              key={index}
-              ref={ref}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 * index }}
-              className="min-w-[100px]"
-            >
-              <h1 className="text-4xl font-bold">
-                {inView && (
-                  <CountUp end={stat.number} duration={2} suffix={stat.suffix} enableScrollSpy />
-                )}
-              </h1>
-              <p className="mt-2 text-sm sm:text-base">{stat.label}</p>
-            </motion.div>
-          );
-        })}
-      </div>
+     <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 ">
+  {stats.map((stat, index) => {
+    const { ref, inView } = useInView({ triggerOnce: true });
+    return (
+      <motion.div
+        key={index}
+        ref={ref}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.1 * index }}
+        className="min-w-[100px] "
+      >
+        <h1 className="text-4xl font-bold ">
+          {inView && (
+            <CountUp
+              end={stat.number}
+              duration={2}
+              suffix={stat.suffix}
+              enableScrollSpy
+            />
+          )}
+        </h1>
+        <p className="mt-10 text-sm sm:text-base">{stat.label}</p>
+      </motion.div>
+    );
+  })}
+</div>
+
     </div>
   </motion.div>
 </motion.section>
